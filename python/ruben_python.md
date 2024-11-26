@@ -4,9 +4,7 @@
 No sé si esto lo entiendes bien pero por lo que me has dicho antes creo que no, te lo pongo por si acaso.
 
 Python es un lenguaje orientado a objetos, en plan, tu vas a definir clases que pueden tener atributos y métodos. Luego en el código tu vas a declarar instancias específicas de las clases, y ese objeto es el que ejecuta el método. 
-Los atributos que quieras que tenga una clase los defines en la funcion __intit__.
-
-Ej:
+Los atributos que quieras que tenga una clase los defines en la funcion __intit__. Por ej:
 
 ```python
 class Persona:
@@ -41,8 +39,8 @@ class Persona:
 persona1 = Persona("Ana", 25)
 
 print(persona1) # esto imprimiria por pantalla: Persona Ana, 25 años
-
 ```
+
 
 
 ## Recomendaciones del Óscar easy
@@ -51,6 +49,7 @@ print(persona1) # esto imprimiria por pantalla: Persona Ana, 25 años
 - No imprimir nada fuera de la interfaz, es decir, comprobar absolutamente todo.
 - Programar pensando que todo va a fallar, e incluir respectivo control de errores. (si tienes que introducir un numero por pantalla, comprobar que se ha introducido, algo, si es un numero o otro tipo de carácter, si el numero es positivo o si es alguno en específico, etc.)
 - Comentar el código (esto es posiblemente lo peor de la práctica jajaja pero si le pasas la función a Charlie no suele comentarla mal)
+
 
 
 ## Estructura del código
@@ -83,6 +82,9 @@ if __name__ == "__main__":
  ...
 ```
 
+(Aquí te tendrás que hacer métodos que reciban un número, ya con eso ejecutas ejecutas el método de las clases DNA y Repositorio que necesites.)
+
+
 
 ### Clase para "ADN" (modela el ADN)
 Aquí te haces una clase ADN que tenga los atributos que necesites. En las diapositivas (pg.15) te dan una estructura base con una serie de métodos y atributos (falta un método, te lo pongo más adelante):
@@ -111,7 +113,6 @@ class DNA:
 
     def synth_complement(self):
         pass
-
 ```
 Supuestamente debes de implementar métodos para todo esto (pg.7): 
 
@@ -127,6 +128,7 @@ Operations with DNA:
 El 7 falta en el código de arriba, supongo que irá también ahí y se le has olvidado ponerlo.
 
 
+
 ### Clase para "Repositorio" (gestiona operaciones como guardar y borrar)
 En esta clase te defines un método para operación. Creo que las que te pide son:
 1. Create new DNA chain
@@ -136,9 +138,7 @@ En esta clase te defines un método para operación. Creo que las que te pide so
     - Devuelve una lista y en la interfaz lo imprimes.
 5. Delete DNA info
 
-
 ```python
-
 # En función de si tienes que pasarle alguna variable a algun método, lo añades a parte de 'self'
 class Repositorio:
     def __init__(self):
