@@ -126,8 +126,8 @@ El 7 falta en el código de arriba, supongo que irá también ahí y se le has o
 
 
 
-### Clase para "Repositorio" (gestiona operaciones como guardar y borrar)
-En esta clase te defines un método para operación. Creo que las que te pide son:
+### Clase para "Operaciones" (gestiona operaciones como guardar y borrar)
+En esta clase te defines un método para cada operación. Creo que las que te pide son:
 1. Create new DNA chain
 2. Save DNA chain
 3. Load DNA from disk
@@ -137,7 +137,7 @@ En esta clase te defines un método para operación. Creo que las que te pide so
 
 ```python
 # En función de si tienes que pasarle alguna variable a algun método, lo añades a parte de 'self'
-class Repositorio:
+class Operaciones:
     def __init__(self):
         self.dna = ...
         self.atributo2 = ...
@@ -161,3 +161,10 @@ class Repositorio:
         pass # dna.metodo()
 ```
 
+___ 
+
+# Resumen
+
+1. Te creas un archivo "DNA.py", "Operaciones.py" y "AppDNA.py" y metes el cada uno el código correspondiente de arriba.
+2. Haz las funciones de las clases DNA y Operaciones como te dice en las diapositivas.
+3. En la clase AppDNA te haces funciones a modo de menú, que impriman por pantalla las opciones que puedes hacer, y solicitar un numero por teclado, y en función del número ejecutar el método de las otras clases y mostrar el resultado o lo que haga falta.
