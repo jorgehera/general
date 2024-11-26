@@ -68,7 +68,6 @@ class AppDNA:
 
     self.interface = DNAInterface()
     def ejecutar(self):
-
         while True:
             # Lógica del menú, llamado a métodos según la opción seleccionada
             opcion = self.interface.mostrar_menu() # Mostrar el menú y obtener la opción del usuario
