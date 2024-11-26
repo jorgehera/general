@@ -64,9 +64,9 @@ from dna_interface import DNAInterface
 # Definimos la clase AppDNA, que será la interfaz gráfica
 class AppDNA:
     def __init__(self):
+        self.interface = DNAInterface()
         ... # Aquí puedes inicializar lo que sea necesario para la clase
-
-    self.interface = DNAInterface()
+        
     def ejecutar(self):
         while True:
             # Lógica del menú, llamado a métodos según la opción seleccionada
