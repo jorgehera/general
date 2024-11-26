@@ -35,9 +35,7 @@ class Persona:
     def __str__(self):
             return f"Persona: {self.nombre}, {self.edad} años"
 
-
 persona1 = Persona("Ana", 25)
-
 print(persona1) # esto imprimiria por pantalla: Persona Ana, 25 años
 ```
 
@@ -66,7 +64,7 @@ class AppDNA:
     def __init__(self):
         self.interface = DNAInterface()
         ... # Aquí puedes inicializar lo que sea necesario para la clase
-        
+
     def ejecutar(self):
         while True:
             # Lógica del menú, llamado a métodos según la opción seleccionada
